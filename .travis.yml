@@ -5,6 +5,7 @@ dist: trusty
 os:
  - linux
  - linux-ppc64le
+   sudo: true
 
 before_install:
  - sudo apt-get -qq update
