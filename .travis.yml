@@ -1,7 +1,7 @@
 language: c
 sudo: false
 os: linux-ppc64le
-dist: xenial
+
 
 before_install:
   - travis_retry sudo apt-get -qq update
