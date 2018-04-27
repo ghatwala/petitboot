@@ -1,6 +1,6 @@
 language: c
-os: linux-ppc64le
 sudo: false
+os: linux-ppc64le
 dist: xenial
 
 before_install:
