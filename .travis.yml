@@ -3,12 +3,12 @@ os:
   - linux-ppc64le
   - linux
 
-sudo: required
+sudo: false
 dist: xenial
 
 before_install:
- - sudo apt-get -qq update
- - sudo apt-get install -y autopoint libuv-dev libdevmapper-dev flex bison
+ - apt-get -qq update
+ - apt-get install -y autopoint libuv-dev libdevmapper-dev flex bison
  - ./bootstrap
 
 install:
