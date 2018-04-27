@@ -1,6 +1,6 @@
 language: c
 os: linux-ppc64le
-sudo: false
+sudo: required
 
 before_install:
   - sudo apt-get -qq update
