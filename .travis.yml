@@ -1,7 +1,10 @@
 language: c
+os:
+  - linux-ppc64le
+  - linux
 
 sudo: required
-dist: trusty
+dist: xenial
 
 before_install:
  - sudo apt-get -qq update
