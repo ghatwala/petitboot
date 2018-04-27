@@ -1,8 +1,15 @@
 language: c
-sudo: false
-os: linux-ppc64le
-
-
+#sudo: false
+#os: linux-ppc64le
+matrix:
+  include:
+    - os: linux-ppc64le # power queue name
+      dist: xenial      # power jobs only on ubuntu-xenial distribution
+      sudo: false       # deploy on workers with docker backend
+    - os: linux-ppc64le
+      dist: xenial
+      sudo: required    # deploy on workers with openstack backend
+    
 before_install:
   - travis_retry sudo apt-get -qq update
   - travis_retry sudo apt-get install -y autopoint libuv-dev libdevmapper-dev flex bison
