@@ -4,8 +4,8 @@ sudo: required
 dist: xenial
 
 before_install:
-  - sudo apt-get -qq update
-  - sudo apt-get install -y autopoint libuv-dev libdevmapper-dev flex bison
+  - travis_retry sudo apt-get -qq update
+  - travis_retry sudo apt-get install -y autopoint libuv-dev libdevmapper-dev flex bison
   - ./bootstrap
 
 install:
