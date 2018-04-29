@@ -11,8 +11,8 @@ matrix:
       sudo: required    # deploy on workers with openstack backend
     
 before_install:
-  - travis_retry sudo apt-get -qq update
-  - travis_retry sudo apt-get install -y autopoint libuv-dev libdevmapper-dev flex bison
+  -  sudo apt-get -qq update
+  -  sudo apt-get install -y autopoint libuv-dev libdevmapper-dev flex bison
   - ./bootstrap
 
 install:
