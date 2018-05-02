@@ -13,9 +13,10 @@ os: linux-ppc64le
 #      sudo: required    # deploy on workers with openstack backend
     
 before_install:
-  -  apt-get -qq update
+  -  whoami
+  -  sudo apt-get -qq update
   -  apt-get install -y autopoint libuv-dev libdevmapper-dev flex bison
-  - ./bootstrap
+  -  ./bootstrap
 
 install:
   - ./configure --with-twin-x11=no --with-twin-fbdev=no
