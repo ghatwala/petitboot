@@ -3,6 +3,14 @@ language: c
 sudo: false
 os: linux-ppc64le
 
+addons:
+  apt:
+    packages:
+    - autopoint
+    - libuv-dev 
+    - libdevmapper-dev 
+    - flex
+    - bison
 #matrix:
 #  include:
 #    - os: linux-ppc64le # power queue name
@@ -13,8 +21,8 @@ os: linux-ppc64le
 #      sudo: required    # deploy on workers with openstack backend
     
 before_install:
-  -  sudo apt-get -qq update
-  -  sudo apt-get install -y autopoint libuv-dev libdevmapper-dev flex bison
+  #-  sudo apt-get -qq update
+  #-  sudo apt-get install -y autopoint libuv-dev libdevmapper-dev flex bison
   -  ./bootstrap
 
 install:
