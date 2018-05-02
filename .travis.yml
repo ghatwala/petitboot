@@ -14,7 +14,7 @@ os: linux-ppc64le
     
 before_install:
   -  whoami
-  -  sudo apt-get -qq update
+  -  apt-get -qq update
   -  apt-get install -y autopoint libuv-dev libdevmapper-dev flex bison
   -  ./bootstrap
 
