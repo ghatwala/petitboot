@@ -13,8 +13,6 @@ addons:
     - bison
     
 before_install:
-  #-  sudo apt-get -qq update
-  #-  sudo apt-get install -y autopoint libuv-dev libdevmapper-dev flex bison
   -  ./bootstrap
 
 install:
