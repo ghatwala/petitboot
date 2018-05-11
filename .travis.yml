@@ -5,6 +5,10 @@ os: linux-ppc64le
 dist: xenial
 
 addons:
+    apt:
+      update: true
+
+addons:
   apt:
     packages:
       - git
