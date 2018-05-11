@@ -6,20 +6,25 @@ dist: xenial
 
 addons:
   apt:
-    update: true
     packages:
-    - autopoint
-    - libuv-dev 
-    - libdevmapper-dev 
-    - flex
-    - bison
+      - git
+
+
+#addons:
+#  apt:
+#    packages:
+#    - autopoint
+#    - libuv-dev 
+#    - libdevmapper-dev 
+#    - flex
+#    - bison
     
-before_install:
-  -  ./bootstrap
+before_install: skip
+  # -  ./bootstrap
 
-install:
-  - ./configure --with-twin-x11=no --with-twin-fbdev=no
-  - make
+install: skip 
+  #- ./configure --with-twin-x11=no --with-twin-fbdev=no
+ # - make
 
-script:
-  - make check
+script: skip
+  #- make check
