@@ -6,6 +6,7 @@ dist: xenial
 
 addons:
   apt:
+    update: true
     packages:
     - autopoint
     - libuv-dev 
