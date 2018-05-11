@@ -10,6 +10,9 @@ addons:
       - git
       - flex
       - bison
+      - autopoint
+      - libuv-dev 
+      - libdevmapper-dev 
 
 #addons:
 #  apt:
