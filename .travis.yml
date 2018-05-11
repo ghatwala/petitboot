@@ -1,6 +1,6 @@
 language: c
 
-sudo: false
+sudo: required
 os: linux-ppc64le
 dist: xenial
 
@@ -27,12 +27,12 @@ addons:
 #    - flex
 #    - bison
     
-before_install: skip
-  # -  ./bootstrap
+before_install: 
+   -  ./bootstrap
 
-install: skip 
-  #- ./configure --with-twin-x11=no --with-twin-fbdev=no
- # - make
+install:  
+   - ./configure --with-twin-x11=no --with-twin-fbdev=no
+   - make
 
-script: skip
-  #- make check
+script: 
+   - make check
